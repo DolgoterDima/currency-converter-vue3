@@ -1,0 +1,65 @@
+.modal {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.3);
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+
+  &__wrapper {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    overflow: auto;
+    width: 800px;
+    max-width: 90%;
+    background-color: white;
+  }
+
+  &__container {
+  }
+
+  &__header {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__body {
+    padding: 20px;
+    text-align: center;
+  }
+
+  &__footer {
+  }
+ &__buttons{
+   margin-top: 20px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 5px;
+ }
+  &__error{
+    display: inline-block;
+    margin-top: 10px;
+    color: $color-error;
+  }
+  &__button {
+    cursor: pointer;
+    padding: 5px 8px;
+    border-radius: 5px;
+    border: 1px solid  $color-dark;
+    color: $color-black;
+    transition: color .3s linear;
+    &:hover{
+      color: $color-light-gray2;
+    }
+
+    &--close {
+      background-color: red;
+    }
+  }
+}

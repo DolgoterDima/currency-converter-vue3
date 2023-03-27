@@ -1,0 +1,56 @@
+.form {
+
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  @include responsive('md'){
+    flex-direction: row;
+  }
+  &__side {
+    display: flex;
+    margin-bottom: 10px;
+    white-space: nowrap;
+
+  }
+
+  &__title {
+    &--error {
+      color: $color-error;
+    }
+  }
+  &__input-wrapper {
+  }
+  &__amount {
+    margin: 0 5px;
+  }
+  &__dropdown {
+    margin: 0 5px;
+  }
+  &__input {
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid;
+    width: 45px;
+    padding: 0px;
+    outline: none;
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+    &[type="number"] {
+      -moz-appearance: textfield;
+    }
+  }
+
+  &__select {
+  }
+
+  &__option {
+  }
+
+  &__chart {
+  }
+}

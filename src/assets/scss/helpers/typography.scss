@@ -1,0 +1,38 @@
+
+body{
+  font-family: 'Roboto', sans-serif;
+
+}
+.text-overflow {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.regular-text {
+  font-size: $font-size-default;
+  line-height: $line-height-regular;
+}
+.small-text {
+  font-size: $font-size-small;
+  line-height: $line-height-small;
+}
+
+.regular-link {
+  text-decoration: none;
+  color: $color-black;
+  transition: color 0.3s;
+  &:hover {
+    color: lighten($color-black, 10%);
+  }
+}
+
+.list {
+  list-style: disc;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 50px;
+}

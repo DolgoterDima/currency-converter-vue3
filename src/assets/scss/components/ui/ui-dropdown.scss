@@ -1,0 +1,30 @@
+.dropdown {
+  position: relative;
+  background-color: $color-white;
+
+  $parent: &;
+  &__header {
+    cursor: pointer;
+    display: flex;
+    font-weight: bold;
+  }
+  &__arrow {
+    width: 10px;
+  }
+  &__list {
+    position: absolute;
+    top: 100%;
+    background-color: $color-white;
+  }
+
+  &__item {
+    cursor: pointer;
+  }
+  &--open {
+    #{$parent} {
+      &__arrow {
+        transform: scale(-1);
+      }
+    }
+  }
+}
