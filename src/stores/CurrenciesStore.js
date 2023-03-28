@@ -13,8 +13,6 @@ export const useCurrenciesStore = defineStore("CurrenciesStore", {
     };
   },
   getters: {
-
-
     getFilteredCurrenciesNames: (state) => (searchLetters) => {
       /* return only currencies which starts with passed letters in variables searchLetters and
        *    return currencies which not are in list already  */

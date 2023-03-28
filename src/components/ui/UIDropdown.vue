@@ -38,7 +38,7 @@
 </template>
 
 <script setup>
-import {defineProps, defineEmits} from 'vue'
+import { defineProps, defineEmits } from "vue";
 const props = defineProps(["list", "default"]);
 const emits = defineEmits(["value"]);
 

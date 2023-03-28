@@ -41,7 +41,6 @@ const chartOptions = {
 
 const canvasRef = ref(null);
 
-
 onMounted(() => {
   new Chart(canvasRef.value, {
     type: "line",

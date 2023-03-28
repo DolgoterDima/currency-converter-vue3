@@ -1,6 +1,6 @@
 .currencies-block {
-  &__controls{
-display: flex;
+  &__controls {
+    display: flex;
     align-items: center;
     justify-content: flex-start;
     margin-bottom: 10px;
@@ -13,7 +13,7 @@ display: flex;
     margin-right: 5px;
   }
   &__list {
-    border:1px solid  ;
+    border: 1px solid;
     padding: 10px;
     width: 100%;
     max-width: 400px;
@@ -23,44 +23,44 @@ display: flex;
     border: 1px solid $color-black;
     background-color: $color-white;
     padding: 5px 10px;
-    transition: background-color .3s linear;
-   &--refresh{
-     width: 30px;
-     height: 30px;
-     border-radius: 50%;
-     border: none;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     transition: background-color .3s linear;
-     padding: 7px ;
-   }
-     &--disabled{
+    transition: background-color 0.3s linear;
+    &--refresh {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background-color 0.3s linear;
+      padding: 7px;
+    }
+    &--disabled {
       background-color: $color-light-gray2;
-       cursor: not-allowed;
+      cursor: not-allowed;
     }
-    &--add-new{
-margin-top: 20px;
+    &--add-new {
+      margin-top: 20px;
     }
-    &:hover{
+    &:hover {
       background-color: $color-light-gray;
     }
   }
-  &__icon{
+  &__icon {
     width: 100%;
   }
   &__row {
     display: flex;
-    border-bottom: 1px solid  $color-dark ;
-    padding : 5px 0;
+    border-bottom: 1px solid $color-dark;
+    padding: 5px 0;
     flex-direction: column;
-    &:hover{
+    &:hover {
       background-color: $color-light-gray;
     }
-    @include responsive("md"){
-    flex-direction: row;
+    @include responsive("md") {
+      flex-direction: row;
     }
-    &:last-child{
+    &:last-child {
       border-bottom: none;
     }
   }
@@ -70,7 +70,7 @@ margin-top: 20px;
     align-items: center;
     flex: 1 1 0px;
     margin-bottom: 5px;
-    @include responsive("md"){
+    @include responsive("md") {
       margin-bottom: 0px;
     }
   }
@@ -83,7 +83,7 @@ margin-top: 20px;
     display: inline-block;
     margin-right: 5px;
 
-    @include responsive("md"){
+    @include responsive("md") {
       margin-bottom: 0px;
     }
   }

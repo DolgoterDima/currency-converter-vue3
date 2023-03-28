@@ -1,17 +1,15 @@
 .form {
-
   display: flex;
   justify-content: center;
   align-items: start;
   flex-direction: column;
-  @include responsive('md'){
+  @include responsive("md") {
     flex-direction: row;
   }
   &__side {
     display: flex;
     margin-bottom: 10px;
     white-space: nowrap;
-
   }
 
   &__title {

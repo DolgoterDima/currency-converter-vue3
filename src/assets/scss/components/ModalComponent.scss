@@ -31,21 +31,21 @@
   &__body {
     padding: 20px;
     text-align: center;
-   display: flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
   }
 
   &__footer {
   }
- &__buttons{
-   margin-top: 20px;
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
-   gap: 5px;
- }
-  &__error{
+  &__buttons {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+  }
+  &__error {
     display: inline-block;
     margin-top: 10px;
     color: $color-error;
@@ -54,10 +54,10 @@
     cursor: pointer;
     padding: 5px 8px;
     border-radius: 5px;
-    border: 1px solid  $color-dark;
+    border: 1px solid $color-dark;
     color: $color-black;
-    transition: color .3s linear;
-    &:hover{
+    transition: color 0.3s linear;
+    &:hover {
       color: $color-light-gray2;
     }
 

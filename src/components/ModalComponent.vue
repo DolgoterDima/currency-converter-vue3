@@ -13,8 +13,6 @@
             </button>
           </div>
           <div class="modal__body">
-
-
             <input
               style="text-transform: uppercase"
               type="search"
@@ -73,11 +71,9 @@ const currencySearch = ref("");
 
 const closeModal = () => {
   emit("close");
-
 };
 
- const {  getFilteredCurrenciesNames } =
-  storeToRefs(currenciesStore);
+const { getFilteredCurrenciesNames } = storeToRefs(currenciesStore);
 const { addNewCurrency, fetchAllCurrencies, fetchRatesByCurrency } =
   currenciesStore;
 

@@ -1,7 +1,6 @@
 import { createApp } from "vue";
 import App from "./App.vue";
 
-
 import lodash from "lodash";
 
 import { createPinia } from "pinia";
