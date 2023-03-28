@@ -1,6 +1,7 @@
 <template>
-  <div class="radio" v-for="(currency, index) in list">
+  <div class="radio" v-for="(currency, index) in list"      :key="index">
      <input
+
         type="radio"
         name="currency"
         :id="`radio_${index}`"
@@ -17,9 +18,10 @@
   </div>
 </template>
 <script setup>
-const props = defineProps({
+import {defineProps, defineEmits} from 'vue'
+  defineProps({
   modelValue: {
-    type: Boolean,
+    type: String,
     default: 'USD'
   },
   list: {
@@ -27,9 +29,8 @@ const props = defineProps({
     required: true
   },
 });
-const emits = defineEmits(["change1"]);
+const emits = defineEmits(["change"]);
 const onChange = (currency) => {
-
   emits("change", currency);
 };
 </script>

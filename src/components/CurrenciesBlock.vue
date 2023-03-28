@@ -77,7 +77,7 @@ import { useCurrenciesStore } from "@/stores/CurrenciesStore";
 const { isOpenModal, openModal, closeModal } = useModal();
 
 
-import UIRadio from "@/components/UIRadio.vue";
+import UIRadio from '@/components/ui/UIRadio.vue';
 
 const currenciesStore = useCurrenciesStore();
 

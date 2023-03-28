@@ -13,20 +13,7 @@ export const useCurrenciesStore = defineStore("CurrenciesStore", {
     };
   },
   getters: {
-    getFilteredCurrenciesNames1: (state) => {
-      console.log("getFilteredCurrenciesNames", state.allCurrenciesInTable);
 
-      return (searchLetters) => {
-        const filteredSearchArray = state.allCurrencies.filter((item) => {
-          return (
-            item.startsWith(searchLetters) &&
-            !state.allCurrenciesInTable.includes(item)
-          );
-        });
-
-        return (searchLetters.length > 2 && filteredSearchArray) || [];
-      };
-    },
 
     getFilteredCurrenciesNames: (state) => (searchLetters) => {
       /* return only currencies which starts with passed letters in variables searchLetters and

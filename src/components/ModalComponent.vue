@@ -59,7 +59,7 @@
 </template>
 
 <script setup>
-import { onMounted, ref, defineEmits } from "vue";
+import { onMounted, ref, defineEmits, defineProps } from "vue";
 import { storeToRefs } from "pinia";
 import { useCurrenciesStore } from "@/stores/CurrenciesStore";
 const props = defineProps({
@@ -70,18 +70,13 @@ const emit = defineEmits(["close"]);
 const currenciesStore = useCurrenciesStore();
 
 const currencySearch = ref("");
-const currenciesNames = ref([]);
 
-const isOpen = ref(props.isOpen);
 const closeModal = () => {
   emit("close");
-  console.log("close");
+
 };
-const openModal = () => {
-  isOpen.value = true;
-};
-/* import getters and make them reactive */
-const { getAllCurrenciesInTable, getFilteredCurrenciesNames } =
+
+ const {  getFilteredCurrenciesNames } =
   storeToRefs(currenciesStore);
 const { addNewCurrency, fetchAllCurrencies, fetchRatesByCurrency } =
   currenciesStore;

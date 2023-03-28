@@ -41,11 +41,6 @@
 
   </div>
 
-<!--  <CChart
-    class="form__chart"
-    v-if="getChartData.firstCurrencyData"
-    :key="getChartData"
-  />-->
 </template>
 
 <script setup>
@@ -92,15 +87,4 @@ onMounted(() => {
   fetchDataByCurrencyToPaint(defaultCurrencies);
 });
 </script>
-<style>
-.text-width-enter-active,
-.text-width-leave-active {
-  transition: all 0.5s;
-}
-
-.text-width-enter,
-.text-width-leave-to {
-  width: 0;
-  opacity: 0;
-}
-</style>
+ 

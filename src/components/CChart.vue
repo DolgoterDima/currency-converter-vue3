@@ -11,7 +11,6 @@
 </template>
 
 <script setup>
-import { LineChart } from "vue-chart-3";
 import { ref, onMounted } from "vue";
 import Chart from "chart.js/auto";
 import { storeToRefs } from "pinia";
@@ -41,10 +40,10 @@ const chartOptions = {
 };
 
 const canvasRef = ref(null);
-let myChart;
+
 
 onMounted(() => {
-  myChart = new Chart(canvasRef.value, {
+  new Chart(canvasRef.value, {
     type: "line",
     data: chartData,
     options: chartOptions,
